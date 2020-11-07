@@ -112,6 +112,7 @@ class UbusWebSocket {
     let onUbusRes = (data) => {
       let uCallParser
 
+      hasReturned = true;
       try {
         uCallParser = JSON.parse(data);
       } catch {
