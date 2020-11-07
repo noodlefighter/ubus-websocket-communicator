@@ -65,7 +65,6 @@ class UbusWebSocket {
     let hasReturned = false;
 
     this._ws = new WebSocket(this._url, "ubus-json", {
-      origin: this._url,
       host: this._url
     });
 
